@@ -103,11 +103,11 @@ radio.setGroup(1)
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         A()
-    }
-    if (input.buttonIsPressed(Button.B)) {
+    } else if (input.buttonIsPressed(Button.B)) {
         B()
-    }
-    if (input.buttonIsPressed(Button.AB)) {
+    } else if (input.buttonIsPressed(Button.AB)) {
         AB()
+    } else {
+    	
     }
 })
