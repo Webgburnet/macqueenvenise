@@ -56,6 +56,18 @@ radio.onReceivedString(function (receivedString) {
     if (receivedString == "A+B") {
         AB()
     }
+    if (receivedString == "Av") {
+        Avancer(255)
+    }
+    if (receivedString == "Ar") {
+        Reculer(255)
+    }
+    if (receivedString == "G") {
+        Gauche(255, 255)
+    }
+    if (receivedString == "D") {
+        Droite(255, 255)
+    }
 })
 function Avancer (vitesse: number) {
     basic.showArrow(ArrowNames.North)
