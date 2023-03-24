@@ -68,6 +68,9 @@ radio.onReceivedString(function (receivedString) {
     if (receivedString == "D") {
         Droite(255, 255)
     }
+    if (receivedString == "S") {
+        Stop()
+    }
 })
 function Avancer (vitesse: number) {
     basic.showArrow(ArrowNames.North)
